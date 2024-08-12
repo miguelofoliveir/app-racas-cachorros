@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-detalhe-raca',
   standalone: true,
-  imports: [],
-  template: `
-    <p>
-      detalhe-raca works!
-    </p>
-  `,
-  styles: ``
+  imports: [CommonModule, MatCardModule],
+  templateUrl: './detalhe-raca.component.html',
+  styleUrls: ['./detalhe-raca.component.scss']
 })
-export class DetalheRacaComponent {
-
-}
+export class DetalheRacaComponent {}
