@@ -15,4 +15,8 @@ export class RacasApiService {
   getRacas(): Observable<Raca[]> {
     return this.http.get<Raca[]>(this.apiUrl);
   }
+
+  getRacaById(id: number): Observable<Raca> {
+    return this.http.get<Raca>(`${this.apiUrl}/${id}`);
+  }
 }
