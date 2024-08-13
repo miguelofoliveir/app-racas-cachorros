@@ -1,19 +1,14 @@
 export interface Raca {
     id: number;
-    nome: string;
-    temperamento: string;
-    imagem: ImagemRaca;
-    peso: Medida;
-    altura: Medida;
-    expectativa_vida: string;
-    criado_para?: string;
-    grupo_raca?: string;
-    origem?: string;
-  }
-  
-  export interface ImagemRaca {
-    id: string;
-    url: string;
+    name: string;
+    temperament: string;
+    weight: Medida;
+    height: Medida;
+    life_span: string;
+    bred_for?: string;
+    breed_group?: string;
+    origin?: string;
+    reference_image_id?: string;
   }
   
   export interface Medida {

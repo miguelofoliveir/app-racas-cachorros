@@ -1,13 +1,15 @@
 <mat-card *ngIf="raca">
   <mat-card-header>
-    <mat-card-title>{{ raca.nome }}</mat-card-title>
-    <mat-card-subtitle>{{ raca.origem }}</mat-card-subtitle>
+    <mat-card-title>{{ raca.name }}</mat-card-title>
+    <mat-card-subtitle>{{ raca.origin }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="raca.imagem?.url" alt="{{ raca.nome }}" />
+  <img mat-card-image [src]="'https://cdn2.thedogapi.com/images/' + raca.reference_image_id + '.jpg'" alt="{{ raca.name }}" />
   <mat-card-content>
-    <p>Temperamento: {{ raca.temperamento }}</p>
-    <p>Peso: {{ raca.peso.metric }} kg</p>
-    <p>Altura: {{ raca.altura.metric }} cm</p>
-    <p>Expectativa de vida: {{ raca.expectativa_vida }}</p>
+    <p>Temperamento: {{ raca.temperament }}</p>
+    <p>Peso: {{ raca.weight.metric }} kg</p>
+    <p>Altura: {{ raca.height.metric }} cm</p>
+    <p>Expectativa de vida: {{ raca.life_span }}</p>
+    <p *ngIf="raca.bred_for">Criado para: {{ raca.bred_for }}</p>
+    <p *ngIf="raca.breed_group">Grupo da raça: {{ raca.breed_group }}</p>
   </mat-card-content>
 </mat-card>
