@@ -1,4 +1,4 @@
-# AppRacasCachoros
+# AppRacasCachorros
 
 Este projeto foi criado para consumir a API do [The Dog API](https://thedogapi.com/) e exibir informações detalhadas sobre raças de cachorros. Ele foi desenvolvido utilizando [Angular](https://angular.io/) e estilizado com Angular Material, seguindo os princípios de SOLID e boas práticas de desenvolvimento.
 
